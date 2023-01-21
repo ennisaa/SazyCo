@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Početna</title>
+
+    <!-- font awesome cdn link -->
+    <script src="https://kit.fontawesome.com/59c192bba4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- header section starts -->
+
+    <header class="header">
+        <nav class="navbar nav-1">
+            <section class="flex">
+                <a href="home.html" class="logo"><i class="fa-solid fa-house-chimney-window"></i>SazyCo</a>
+
+                <ul>
+                    <li><a href="#">Objavite Nekretninu<i class="fa-solid fa-paper-plane"></i></a></li>
+                </ul>
+
+            </section>
+        </nav>
+        <nav class="navbar nav-2">
+            <section class="flex">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Kupite Nekretninu<i class="fas fa-angle-down"></i></a>
+                            <ul>
+                                <li><a href="listings.html/kuca">Kuća</a></i></li>
+                                <li><a href="#">Stan</a></li>
+                                <li><a href="#">Poslovni prostor</a></li>
+                                <li><a href="#">Spremno za useljenje</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="#">Prodajte Nekretninu<i class="fas fa-angle-down"></i></a>
+                            <ul>
+                                <li><a href="#">Objavite Nekretninu</a></i></li>
+                                <li><a href="#">Dashboard</a></i></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="#">Iznajmite Nekretninu<i class="fas fa-angle-down"></i></a>
+                            <ul>
+                                <li><a href="#">Kuća</a></li>
+                                <li><a href="#">Stan</a></li>
+                                <li><a href="#">Poslovni prostor</a></li>
+                            </ul>
+                        </li>
+                         <li><a href="#">Više<i class="fas fa-angle-down"></i></a>
+                            <ul>
+                                <li><a href="about.html">O nama</a></li>
+                                <li><a href="contact.html">Kontakt</a></li> 
+                                <li><a href="contact.html#faq">Česta pitanja</a></li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+                <ul>
+                    <li><a href="#">Sačuvano<i class="fa-solid fa-heart"></i></a></li>
+                    <li><a href="#">Account<i class="fa-solid fa-user"></i></a>
+                        <ul>
+                            <li><a href="login.html">Prijava</a></li>
+                            <li><a href="register.html">Registracija</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+    </header>
+
+<!-- header section ends -->
+
+<div class="carousel">
+    <div class="carousel__item">
+        <img src="./Images-SazyCo/carousel1.jpg" alt="">
+        <h2>Dobrodošli na SazyCo</h2>
+        <h4>Vodeća kompanija za nekretnine</h4>
+    </div>
+    <div class="carousel__item">
+        <img src="./Images-SazyCo/carousel2.jpg" alt="">
+        <h2>Dobrodošli na SazyCo</h2>
+        <h4>Vodeća kompanija za nekretnine</h4>
+    </div>
+    <div class="carousel__item">
+        <img src="./Images-SazyCo/carousel3.jpg" alt="">
+        <h2>Dobrodošli na SazyCo</h2>
+        <h4>Vodeća kompanija za nekretnine</h4>
+    </div>
+   </div> 
+
+<!-- home section starts -->
+
+<div class="fade-in">
+    <div class="home">
+
+        <section class="center">
+
+            <form action="search.html" method="post">
+            <h3>Pronađite Vaš Savršen Dom</h3>
+            <div class="box">
+                <p>Unesite lokaciju<span>*</span></p>
+                <input type="text" name="location" required maxlength="50" placeholder="Ime grada" class="input">
+            </div>
+            <div class="flex">
+                <div class="box">
+                    <p>Tip nekretnine<span>*</span></p>
+                    <select name="type" class="input" required>
+                        <option value="flat">Stan</option>
+                        <option value="house">Kuća</option>
+                        <option value="shop">Poslovni prostor</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <p>Broj soba<span>*</span></p>
+                    <select name="bhk" class="input" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <p>Minimalna cijena<span>*</span></p>
+                    <select name="minimum" class="input" required>
+                        <option value="10000">10 000KM</option>
+                        <option value="20000">20 000KM</option>
+                        <option value="30000">30 000KM</option>
+                        <option value="40000">40 000KM</option>
+                        <option value="50000">50 000KM</option>
+                        <option value="100000">100 000KM</option>
+                        <option value="200000">200 000KM</option>
+                        <option value="200000">300 000KM</option>
+                        <option value="500000">500 000KM</option>
+                        <option value="1000000">1 000 000KM</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <p>Maksimalna cijena<span>*</span></p>
+                    <select name="maximum" class="input" required>
+                        <option value="20000">20 000KM</option>
+                        <option value="30000">30 000KM</option>
+                        <option value="40000">40 000KM</option>
+                        <option value="50000">50 000KM</option>
+                        <option value="100000">100 000KM</option>
+                        <option value="200000">200 000KM</option>
+                        <option value="200000">300 000KM</option>
+                        <option value="500000">500 000KM</option>
+                        <option value="1000000">1 000 000KM</option>
+                    </select>
+                </div>
+            </div>
+            <input type="submit" value="Traži nekretninu" name="search" class="btn">
+            </form>
+    
+        </section>
+
+    </div>
+</div>
+<!-- home section ends -->
+
+<!-- services section starts  -->
+
+<section class="services">
+
+    <h1 class="heading">Naše Usluge</h1>
+ 
+    <div class="box-container">
+ 
+       <div class="box">
+          <img src="./Images-SazyCo/kupite.jpg" alt="">
+          <h3>KUPITE</h3>
+          <p>Pronađite svoje novi dom pomoću bezbroj oglasa na našoj stranici.</p>
+       </div>
+ 
+       <div class="box">
+          <img src="./Images-SazyCo/prodajtee.jpg" alt="">
+          <h3>PRODAJTE</h3>
+          <p>Uz nas možete izrvšiti uspješnu prodaju Vaše nekretnine po najoptimalnijim cijenama.</p>
+       </div>
+ 
+       <div class="box">
+          <img src="./Images-SazyCo/cityy.png" alt="">
+          <h3>IZNAJMITE</h3>
+          <p>Bilo da tražite poslovni prostor ili stan za najam, mi ćemo Vam pomoći u pronalasku.</p>
+       </div>
+
+
+       <div class="box">
+          <img src="./Images-SazyCo/zgrade.png" alt="">
+          <h3>STANOVI I ZGRADE</h3>
+          <p>Od stambenih prostora, u ponudi je veliki broj stanova.</p>
+       </div>
+ 
+       <div class="box">
+          <img src="./Images-SazyCo//poslovniprostor.png" alt="">
+          <h3>POSLOVNI PROSTORI</h3>
+          <p>Potražite prostor za Vašu novu firmu, kafić ili restoran.</p>
+       </div>
+ 
+       <div class="box">
+          <img src="./Images-SazyCo/services247.png" alt="">
+          <h3>USLUGA 24/7</h3>
+          <p>Naši call-centar operateri su Vam na usluzi 24/7.</p>
+       </div>
+
+    </div>
+ 
+ </section>
+ 
+ <!-- services section ends -->
+
+<!-- listings section starts -->
+
+<section class="listings">
+    <h1 class="heading">Izdvojeno</h1>
+
+    <div class="box-container">
+        <div class="box">
+            <div class="admin">
+               <h3>J</h3> 
+               <div>
+                <p>John Doe</p>
+                <span>22.12.2022.</span>
+               </div>
+            </div>
+            <div class="thumb">
+                <p class="total-images"><i class="far fa-image"></i><span>4</span></p>
+                <p class="type"><span>Stan</span><span>Sale</span></p>
+                <form action="" method="post" class="save">
+                    <button type="submit" name="save" class="far fa-heart"></button>
+                </form>
+                <img src="./Images-SazyCo/sazyco4.jpg">
+            </div>
+            <h3 class="name">Moderni stanovi</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i><span>Sarajevo, BiH</span></p>
+            <div class="flex">
+                <p><i class="fas fa-bed"></i><span>3</span></p>
+                <p><i class="fas fa-bath"></i><span>2</span></p>
+                <p><i class="fas fa-maximize"></i><span>94m2</span></p>
+            </div>
+            <a href="view_property.html" class="btn">Pregled</a>
+        </div>
+
+        <div class="box">
+            <div class="admin">
+                <h3>J</h3> 
+                <div>
+                 <p>Jane Doe</p>
+                 <span>1.1.2023.</span>
+                </div>
+             </div>
+            <div class="thumb">
+                <p class="total-images"><i class="far fa-image"></i><span>4</span></p>
+                <p class="type"><span>Kuća</span><span>Sale</span></p>
+                <form action="" method="post" class="save">
+                    <button type="submit" name="save" class="far fa-heart"></button>
+                </form>
+                <img src="./Images-SazyCo/sazyco1.jpg">
+            </div>
+            <h3 class="name">Moderni stanovi</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i><span>Sarajevo, BiH</span></p>
+            <div class="flex">
+                <p><i class="fas fa-bed"></i><span>3</span></p>
+                <p><i class="fas fa-bath"></i><span>2</span></p>
+                <p><i class="fas fa-maximize"></i><span>94m2</span></p>
+            </div>
+            <a href="view_property.html" class="btn">Pregled</a>
+        </div>
+
+        <div class="box">
+            <div class="admin">
+                <h3>J</h3> 
+                <div>
+                 <p>John Doe</p>
+                 <span>15.10.2022.</span>
+                </div>
+             </div>
+            <div class="thumb">
+                <p class="total-images"><i class="far fa-image"></i><span>4</span></p>
+                <p class="type"><span>Stan</span><span>Sale</span></p>
+                <form action="" method="post" class="save">
+                    <button type="submit" name="save" class="far fa-heart"></button>
+                </form>
+                <img src="./Images-SazyCo/sazyco2.jpeg">
+            </div>
+            <h3 class="name">Moderni stanovi</h3>
+            <p class="location"><i class="fas fa-map-marker-alt"></i><span>Sarajevo, BiH</span></p>
+            <div class="flex">
+                <p><i class="fas fa-bed"></i><span>3</span></p>
+                <p><i class="fas fa-bath"></i><span>2</span></p>
+                <p><i class="fas fa-maximize"></i><span>94m2</span></p>
+            </div>
+            <a href="view_property.html" class="btn">Pregled</a>
+        </div>
+    </div>
+    <div style="margin-top: 2rem; text-align: center;">
+    <a href="listings.html" class="inline-btn">Pogledajte Sve</a></div>
+</section>
+
+<!-- listings section ends -->
+
+<!-- footer section begins -->
+
+<footer class="footer">
+    <section class="flex">
+        <div class="box">
+            <a href="tel:+387 33 268 647"><i class="fa-sharp fa-solid fa-phone"></i><span>+387 33 268 647
+            </span></a>
+            <a href="tel:+387 33 345 345"><i class="fa-sharp fa-solid fa-phone"></i><span>+387 33 345 345
+            </span></a>
+            <a href="mailto:sazyco@gmail.com"><i class="fa-solid fa-envelope"></i><span>sazyco@gmail.com
+            </span></a>
+            <a href="#"><i class="fa-solid fa-map-pin"></i><span>Sarajevo, Bosna i Hercegovina
+            </span></a>
+        </div>
+        <div class="box">
+            <a href="home.html"><span>Početna</span></a>
+            <a href="about.html"><span>O nama</span></a>
+            <a href="contact.html"><span>Kontakt</span></a>
+            <a href="listings.html"><span>Sve nekretnine</span></a>
+        </div>
+
+        <div class="box">
+            <a href="#"><span>Facebook</span><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><span>Instagram</span><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><span>Linkedin</span><i class="fa-brands fa-linkedin"></i></a>  
+            <a href="#"><span>Twitter</span><i class="fa-brands fa-twitter"></i></a>          
+        
+        </div>
+    </section>
+
+    <div class="credit"><i class="fa-solid fa-copyright"></i>
+       Copyright 2023 by <span>Enisa Šeho & Hannan Ramić</span> | Sva prava zadržana
+    </div>
+
+</footer>
+
+<!-- footer section ends -->
+
+
+<!-- custom js file links  -->
+<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
